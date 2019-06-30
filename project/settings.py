@@ -44,6 +44,17 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'debug_toolbar',
     'welcome',
+
+
+    'btc_thisweek_okex',
+    'ltc_thisweek_okex',
+    'eth_thisweek_okex',
+    'etc_thisweek_okex',
+    'xrp_thisweek_okex',
+    'eos_thisweek_okex',
+    'trx_thisweek_okex',
+    'bch_thisweek_okex',
+    'bsv_thisweek_okex',
 ]
 
 MIDDLEWARE = [
