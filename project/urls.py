@@ -4,6 +4,9 @@ from django.contrib import admin
 
 from welcome.views import index, health
 
+# import websockets
+# import public
+
 
 urlpatterns = [
     # Examples:
@@ -13,6 +16,8 @@ urlpatterns = [
     url(r'^$', index),
     url(r'^health$', health),
     url(r'^admin/', include(admin.site.urls)),
+
+    # url(r'^v1/trades', public.trades),
 ]
 
 if settings.DEBUG:
@@ -22,3 +27,4 @@ if settings.DEBUG:
     ] + urlpatterns
 
 
+# websockets.startWebsocket()
