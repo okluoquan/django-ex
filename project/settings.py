@@ -44,36 +44,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'debug_toolbar',
     'welcome',
-
-    'btc_thisweek_okex',
-    'ltc_thisweek_okex',
-    'eth_thisweek_okex',
-    'etc_thisweek_okex',
-    'xrp_thisweek_okex',
-    'eos_thisweek_okex',
-    'trx_thisweek_okex',
-    'bch_thisweek_okex',
-    'bsv_thisweek_okex',
-
-    'btc_nextweek_okex',
-    'ltc_nextweek_okex',
-    'eth_nextweek_okex',
-    'etc_nextweek_okex',
-    'xrp_nextweek_okex',
-    'eos_nextweek_okex',
-    'trx_nextweek_okex',
-    'bch_nextweek_okex',
-    'bsv_nextweek_okex',
-
-    'btc_quarter_okex',
-    'ltc_quarter_okex',
-    'eth_quarter_okex',
-    'etc_quarter_okex',
-    'xrp_quarter_okex',
-    'eos_quarter_okex',
-    'trx_quarter_okex',
-    'bch_quarter_okex',
-    'bsv_quarter_okex',
 ]
 
 MIDDLEWARE = [
