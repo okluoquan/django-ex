@@ -26,4 +26,4 @@ if settings.DEBUG:
     ] + urlpatterns
 
 
-websockets.startWebsocket()
+# websockets.startWebsocket()
