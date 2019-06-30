@@ -16,7 +16,7 @@ urlpatterns = [
     url(r'^health$', health),
     url(r'^admin/', include(admin.site.urls)),
 
-    url(r'^v1/trades', public.trades),
+    # url(r'^v1/trades', public.trades),
 ]
 
 if settings.DEBUG:
