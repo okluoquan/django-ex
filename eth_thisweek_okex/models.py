@@ -10,5 +10,5 @@ class Trade(models.Model):
     timestamp = models.DateTimeField()
     price = models.CharField(max_length=20)
     qty = models.CharField(max_length=20)
-    trade_id = models.CharField(max_length=20)
+    trade_id = models.CharField(max_length=20, unique = True)
     side = models.CharField(max_length=1)
