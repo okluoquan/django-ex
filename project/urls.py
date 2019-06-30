@@ -3,8 +3,8 @@ from django.conf.urls import include, url
 from django.contrib import admin
 
 from welcome.views import index, health
-import websockets
-import public
+# import websockets
+# import public
 
 
 urlpatterns = [
