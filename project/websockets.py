@@ -122,39 +122,39 @@ def run(*args):
 				if("BTC-USD" in line['instrument_id']) :
 					trade,created = BtcTradeThisweek.objects.get_or_create(instrument_id=line['instrument_id'], timestamp=get_aware_datetime(line['timestamp']), price=line['price'], qty=line['qty'], trade_id=line['trade_id'], side='b' if line['side'] == 'buy' else 's')
 				
-					trade.save()
+					# trade.save()
 				elif("LTC-USD" in line['instrument_id']):
 					trade,created = LtcTradeThisweek.objects.get_or_create(instrument_id=line['instrument_id'], timestamp=get_aware_datetime(line['timestamp']), price=line['price'], qty=line['qty'], trade_id=line['trade_id'], side='b' if line['side'] == 'buy' else 's')
 				
-					trade.save()
+					# trade.save()
 				elif("ETH-USD" in line['instrument_id']):
 					trade,created = EthTradeThisweek.objects.get_or_create(instrument_id=line['instrument_id'], timestamp=get_aware_datetime(line['timestamp']), price=line['price'], qty=line['qty'], trade_id=line['trade_id'], side='b' if line['side'] == 'buy' else 's')
 				
-					trade.save()
+					# trade.save()
 				elif("ETC-USD" in line['instrument_id']):
 					trade,created = EtcTradeThisweek.objects.get_or_create(instrument_id=line['instrument_id'], timestamp=get_aware_datetime(line['timestamp']), price=line['price'], qty=line['qty'], trade_id=line['trade_id'], side='b' if line['side'] == 'buy' else 's')
 				
-					trade.save()
+					# trade.save()
 				elif("XRP-USD" in line['instrument_id']):
 					trade,created = XrpTradeThisweek.objects.get_or_create(instrument_id=line['instrument_id'], timestamp=get_aware_datetime(line['timestamp']), price=line['price'], qty=line['qty'], trade_id=line['trade_id'], side='b' if line['side'] == 'buy' else 's')
 				
-					trade.save()
+					# trade.save()
 				elif("EOS-USD" in line['instrument_id']):
 					trade,created = EosTradeThisweek.objects.get_or_create(instrument_id=line['instrument_id'], timestamp=get_aware_datetime(line['timestamp']), price=line['price'], qty=line['qty'], trade_id=line['trade_id'], side='b' if line['side'] == 'buy' else 's')
 				
-					trade.save()
+					# trade.save()
 				elif("TRX-USD" in line['instrument_id']):
 					trade,created = TrxTradeThisweek.objects.get_or_create(instrument_id=line['instrument_id'], timestamp=get_aware_datetime(line['timestamp']), price=line['price'], qty=line['qty'], trade_id=line['trade_id'], side='b' if line['side'] == 'buy' else 's')
 				
-					trade.save()
+					# trade.save()
 				elif("BCH-USD" in line['instrument_id']):
 					trade,created = BchTradeThisweek.objects.get_or_create(instrument_id=line['instrument_id'], timestamp=get_aware_datetime(line['timestamp']), price=line['price'], qty=line['qty'], trade_id=line['trade_id'], side='b' if line['side'] == 'buy' else 's')
 				
-					trade.save()
+					# trade.save()
 				elif("BSV-USD" in line['instrument_id']):
 					trade,created = BsvTradeThisweek.objects.get_or_create(instrument_id=line['instrument_id'], timestamp=get_aware_datetime(line['timestamp']), price=line['price'], qty=line['qty'], trade_id=line['trade_id'], side='b' if line['side'] == 'buy' else 's')
 				
-					trade.save()
+					# trade.save()
 				else:
 					pass
 
