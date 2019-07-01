@@ -164,12 +164,10 @@ def run(*args):
 			print "Ctrl+C detected..."
 			break
 		except Exception as e:
-			print("aaaaaa")
 			print "%s, retrying..." % str(e)
 			time.sleep(1)
 			continue
 		finally:
-			print("bbbbbb")
 			print "Stopping streaming socket..."
 			s.close()
     
