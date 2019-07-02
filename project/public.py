@@ -65,7 +65,6 @@ def trades(request):
 		"bsv_thisweek_okex" == request.GET["symbol"]) :
 		start_str = ""
 		if(request.GET["start"] == "1200000000") :
-			print("1111111")
 			now = datetime.datetime.now()
 			start = now - datetime.timedelta(hours=24*3, minutes=0, seconds=0)
 			start_str = start.strftime("%Y-%m-%d %H:%M:%S")
@@ -74,7 +73,8 @@ def trades(request):
 			# start_str = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(start))
 			# start_str = datetime.datetime.fromtimestamp(start).strftime("%Y-%m-%d %H:%M:%S")
 			start_str = datetime.datetime.utcfromtimestamp(start).strftime("%Y-%m-%d %H:%M:%S")
-			print(start_str)
+		
+		print(start_str)
 		
 
 		if(start_str != ""):
@@ -112,34 +112,3 @@ def trades(request):
 	return HttpResponse(reponse)
 
 
-
-def eos_thisweek_okex(request):
-	pass
-	# if("/eos_thisweek_okex" == request.path or "/eos_thisweek_okex/" == request.path) :
-	# 	print request.path
-	# 	print request.GET
-	# 	print request.GET["from"]
-	# 	print request.GET["limit"]
-	# 	print request.path
-
-	# return HttpResponse(json.dumps({"price":"123", "volume":"10", "side":"b", "timestamp":"2019-05-01 12:22:10"}), content_type="application/json")
-
-
-def thisweek(request):
-
-	now = datetime.datetime.now()
-	start = now - datetime.timedelta(hours=0, minutes=15, seconds=0)
-	start_str = start.strftime("%Y-%m-%d %H:%M:%S")
-	print start_str
-	list = TrxTradeThisweek.objects.filter(timestamp__gt=get_aware_datetime(start_str))[:5]
-	# list = TrxTradeThisweek.objects.filter(timestamp__gt=get_aware_datetime(start_str)).order_by('-timestamp')[:5]
-	
-
-	response1 = ""
-	# list = TrxTradeThisweek.objects.all()
-	for var in list:
-		# print(var.timestamp)
-		# print(var.timestamp.strftime('%Y-%m-%d %H:%M:%S'))
-		response1 += var.timestamp.strftime('%Y-%m-%d %H:%M:%S') + "----" + var.price + "<br>"
-
-	return HttpResponse(response1)

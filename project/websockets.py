@@ -220,9 +220,19 @@ def run(*args):
 
 
 
+
 def startWebsocket():
 	thread.start_new_thread(run, ())
-
 	
 
+	
+# connectNum = 0
+
+# def startWebsocket():
+# 	global connectNum
+# 	if(0 == connectNum) :
+# 		thread.start_new_thread(run, ())
+	
+# 	connectNum += 1
+# 	print("-------connectNum = " + str(connectNum))
 
