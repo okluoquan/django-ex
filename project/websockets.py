@@ -43,15 +43,15 @@ from bsv_thisweek_okex.models import Trade as BsvTradeThisweek
 
 wsurl = "wss://149.129.81.70:10442/ws/v3"
 instrument_ids = [
-	"futures/trade:BTC-USD-190705",
-	"futures/trade:LTC-USD-190705",
-	"futures/trade:ETH-USD-190705",
-	"futures/trade:ETC-USD-190705",
-	"futures/trade:XRP-USD-190705",
-	"futures/trade:EOS-USD-190705",
-	"futures/trade:TRX-USD-190705",
-	"futures/trade:BCH-USD-190705",
-	"futures/trade:BSV-USD-190705",
+	"futures/trade:BTC-USD-191004",
+	"futures/trade:LTC-USD-191004",
+	"futures/trade:ETH-USD-191004",
+	"futures/trade:ETC-USD-191004",
+	"futures/trade:XRP-USD-191004",
+	"futures/trade:EOS-USD-191004",
+	"futures/trade:TRX-USD-191004",
+	"futures/trade:BCH-USD-191004",
+	"futures/trade:BSV-USD-191004",
 ]
 
 modify_instrument_ids = False
